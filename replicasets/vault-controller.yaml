@@ -18,7 +18,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: vault-controller
-                  key: vault_token
+                  key: vault-token
             - name: VAULT_WRAP_TTL
               # The wrapped vault token must unwrapped by the pod in
               # this number of seconds.
