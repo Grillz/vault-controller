@@ -50,7 +50,7 @@ Store the Vault root key in a Kubernetes secret. This will allow the Vault Contr
 ```
 kubectl -n vault-controller \
   create secret generic vault-controller \
-  --from-literal "vault_token=3e4a5ba1-kube-422b-d1db-844979cab098"
+  --from-literal=vault-token=3e4a5ba1-kube-422b-d1db-844979cab098
 ```
 
 ### Deploy the Vault Controller:
